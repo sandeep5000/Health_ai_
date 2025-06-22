@@ -13,7 +13,7 @@ def main():
 
     if st.button("Predict"):
         if not user_input.strip():
-            st.warning("⚠️ Please enter symptoms.")
+            st.warning("⚠ Please enter symptoms.")
             return
 
         prompt = f"User: My symptoms are {user_input}. What disease could this be?\nAI:"
@@ -21,7 +21,7 @@ def main():
         with st.spinner("🔍 Predicting..."):
             try:
                 result = chatbot(prompt, max_new_tokens=120)
-                response = result[0]['generated_text'].strip() if result else "⚠️ Couldn't generate a response."
+                response = result[0]['generated_text'].strip() if result else "⚠ Couldn't generate a response."
             except Exception as e:
                 response = f"❌ Error: {str(e)}"
 
