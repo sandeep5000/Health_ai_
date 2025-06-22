@@ -1,6 +1,6 @@
 # ✅ Final Torch fix for Windows + Streamlit
 import sys
-sys.modules["torch.classes"] = None  # Prevent Streamlit from crashing
+sys.modules["torch.classes"] = None
 
 # ✅ Multiprocessing fix
 import multiprocessing
@@ -48,27 +48,27 @@ if page == "🏠 Home":
         st.image(image, width=300)
         st.markdown("</div>", unsafe_allow_html=True)
     except Exception:
-        st.warning("⚠️ Logo image not found. Please ensure 'healthai_logo.png' is in the same folder.")
+        st.warning("⚠ Logo image not found. Please ensure 'healthai_logo.png' is in the same folder.")
 
     if st.button("💡 Click me for health tips"):
         tips = [
             "🩺 Eat more fruits and vegetables! 🍎🥦",
             "💤 Get at least 7-8 hours of sleep each night.",
-            "🚶‍♀️ Regular walking helps reduce blood pressure.",
+            "🚶‍♀ Regular walking helps reduce blood pressure.",
             "💧 Stay hydrated – drink 2-3 liters of water daily.",
-            "🧘‍♀️ Practice mindfulness or meditation for stress relief.",
+            "🧘‍♀ Practice mindfulness or meditation for stress relief.",
             "🦷 Brush and floss your teeth twice a day.",
             "🕒 Stick to a regular sleep schedule.",
             "📵 Reduce screen time before bed for better rest.",
             "🥗 Avoid junk food and eat balanced meals.",
-            "🏃‍♀️ Exercise at least 30 minutes a day to stay fit.",
+            "🏃‍♀ Exercise at least 30 minutes a day to stay fit.",
             "🧴 Use sunscreen to protect your skin outdoors.",
             "🥤 Cut down on sugary drinks to control glucose levels."
         ]
         for tip in tips:
             st.success(tip)
 
-    st.markdown("<p style='color:gray; font-size:12px;'>✨ Powered by IBM Granite, Streamlit & ❤️ by Liki</p>", unsafe_allow_html=True)
+    st.markdown("<p style='color:gray; font-size:12px;'>✨ Powered by IBM Granite, Streamlit & ❤ by Liki</p>", unsafe_allow_html=True)
 
 # ✅ Feature Pages
 elif page == "💬 Patient Chat":
