@@ -13,14 +13,14 @@ def main():
 
     if st.button("Suggest Treatment Plan"):
         if not condition.strip():
-            st.warning("⚠️ Please enter a condition.")
+            st.warning("⚠ Please enter a condition.")
             return
 
         prompt = f"User: What is the treatment plan for {condition}?\nAI:"
         with st.spinner("💡 Generating plan..."):
             try:
                 result = chatbot(prompt, max_new_tokens=120)
-                response = result[0]['generated_text'].strip() if result else "⚠️ Couldn't generate a response."
+                response = result[0]['generated_text'].strip() if result else "⚠ Couldn't generate a response."
             except Exception as e:
                 response = f"❌ Error: {str(e)}"
 
