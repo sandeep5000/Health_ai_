@@ -19,7 +19,7 @@ def main():
 
     df = pd.DataFrame(data).set_index("Date")
 
-    st.subheader("❤️ Heart Rate")
+    st.subheader("❤ Heart Rate")
     st.line_chart(df["Heart Rate"])
 
     st.subheader("💉 Blood Pressure")
@@ -34,14 +34,14 @@ def main():
     query = st.text_input("Ask a question:", placeholder="e.g. Is my BP trend normal?")
     if st.button("Ask AI"):
         if not query.strip():
-            st.warning("⚠️ Please enter a question.")
+            st.warning("⚠ Please enter a question.")
             return
 
         prompt = f"User: Based on my health data, {query}\nAI:"
         with st.spinner("🔍 Analyzing..."):
             try:
                 result = chatbot(prompt, max_new_tokens=120)
-                response = result[0]['generated_text'].strip() if result else "⚠️ Couldn't generate a response."
+                response = result[0]['generated_text'].strip() if result else "⚠ Couldn't generate a response."
             except Exception as e:
                 response = f"❌ Error: {str(e)}"
 
