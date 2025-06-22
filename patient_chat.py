@@ -16,7 +16,7 @@ def main():
 
     if st.button("Ask"):
         if not user_input.strip():
-            st.warning("⚠️ Please enter a question.")
+            st.warning("⚠ Please enter a question.")
             return
 
         greetings = ["hi", "hello", "hey", "hlo"]
@@ -30,7 +30,7 @@ def main():
                     if result and isinstance(result, list) and 'generated_text' in result[0]:
                         response = result[0]['generated_text'].strip()
                     else:
-                        response = "⚠️ Model didn't return a valid response."
+                        response = "⚠ Model didn't return a valid response."
                 except Exception as e:
                     response = f"❌ Error during generation: {e}"
 
@@ -40,7 +40,7 @@ def main():
 
     st.subheader("📜 Chat History")
     for sender, message in st.session_state.chat_history:
-        st.markdown(f"**{'🧑‍💬' if sender == 'You' else '🤖'} {sender}:** {message}")
+        st.markdown(f"{'🧑‍💬' if sender == 'You' else '🤖'} {sender}:** {message}")
 
     if st.button("🧹 Clear Chat History"):
         st.session_state.chat_history = []
