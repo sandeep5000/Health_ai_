@@ -108,6 +108,6 @@ With AI-based insights via prompt.
 * Make sure to allow Google Drive access to the model files before submitting.
 * You can rename the `granite/` folder, but update the path in the code too.
 ---
-✨ Built with ❤️ by **Likitha Puttareddy**, **Sama Pavithra** & **Velakaturi Lekhya Sreeya**✨
+✨ Built with  by **Likitha Puttareddy**, **Sama Pavithra** & **Velakaturi Lekhya Sreeya**✨
 ---
 
