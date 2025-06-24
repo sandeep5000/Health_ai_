@@ -57,18 +57,27 @@ cd Health-ai
 python -m venv venv
 venv\Scripts\activate  # On Windows
 ```
+Here’s your **updated section** for the `README.md`, exactly as per your request — with your **Google Drive model link clearly added** in step 4 and **format preserved**:
+
+---
+
 3️⃣ **Install Dependencies**
+
 ```bash
 pip install -r requirements.txt
 ```
 4️⃣ **Download Model Files (IBM Granite)**
 Due to GitHub storage limits, the model files are hosted externally.
 📥 **Download the Granite model files from Google Drive:**
-🔗 *Download Model Files (3 Parts)*
+🔗 [https://drive.google.com/file/d/1DOIGsywV6mKxiYrYz20Ef1tzYV3B9Lv9/view?usp=drive\_link](https://drive.google.com/file/d/1DOIGsywV6mKxiYrYz20Ef1tzYV3B9Lv9/view?usp=drive_link)
+
 After downloading, **extract the files** and **place them inside the `granite/` folder** in this project.
 5️⃣ **Run the App**
-```bash
+```
+bash
 streamlit run app.py
+```
+---
 ```
 ---
 ## 🧪 Features in Detail
