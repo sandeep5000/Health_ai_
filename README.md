@@ -111,6 +111,3 @@ With AI-based insights via prompt.
 ✨ Built with ❤️ by **Likitha Puttareddy**, **Sama Pavithra** & **Velakaturi Lekhya Sreeya**✨
 ---
 
-✨ Built with ❤️ by **Likitha Puttareddy**, **Sama Pavithra** & **Velakaturi Lekhya Sreeya**✨
----
-
