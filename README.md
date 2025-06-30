@@ -1,9 +1,13 @@
 ## 👥 Team Members and Contributions
 | Name                          | Role                                                                |
 | ----------------------------- | ------------------------------------------------------------------- |
-| **Likitha Puttareddy (LEAD)** | Full-stack development, backend integration, chatbot AI, deployment |
-| **Sama Pavithra**             | Treatment module logic, design assistance                           |
-| **Velakaturi Lekhya Sreeya**  | Health analytics design, testing, and dataset preparation           |
+| **sandeep reddy (LEAD)** | Full-stack development, backend integration, chatbot AI, deployment |
+| **Team Leader : T Sandeep
+
+Team member : S D Nafisa Fathima
+
+Team member : S Monika**             | Treatment module logic, design assistance                           |
+| ***  | Health analytics design, testing, and dataset preparation           |
 ---
 # 🩺 HealthAI: Intelligent Healthcare Assistant
 **Project by:** Likitha Puttareddy (TEAM LEAD), Sama Pavithra, Velakaturi Lekhya Sreeya
